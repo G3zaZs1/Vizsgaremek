@@ -1,0 +1,150 @@
+body
+{
+    background-image: url('../img/fantasy-world-landscape-ai-generated-wallpaper-sr03072408-cover.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.headline
+{
+    background-color: #ff684d97;
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+}
+
+li
+{
+    float: left;
+}
+
+#log
+{
+    float: right;
+}
+
+li a
+{
+    margin-top: 5px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover
+{
+    background-color: #ff684da5;
+}
+
+.content
+{
+    background-color: #ff684d97;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.datas
+{
+    padding: 10px;
+}
+
+.datas ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Make list items display in a row */
+    gap: 20px; /* Add space between list items */
+    align-items: center; /* Align items vertically if heights differ */
+}
+
+.datas li {
+    flex: 1; /* Optional: Ensure equal width for each item */
+}
+
+.datas li img {
+    max-width: 100%; /* Ensure the image resizes properly */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+
+.screens ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center the grid items */
+}
+
+.screens ul li {
+    border-radius: 10px; /* Optional: Rounded corners for images */
+    overflow: hidden; /* Ensure content fits within rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow */
+    aspect-ratio: 1; /* Forces the item to be square */
+}
+
+.screens ul li img {
+    display: block;
+    width: 100%; /* Make images fill their container */
+    height: 100%; /* Ensure the image fills the square */
+    object-fit: cover; /* Ensure the image covers the square area */
+}
+
+
+
+
+footer {
+    margin-top: 20px;
+    clear: both;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #66a803b5;
+    color: white;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    #Describe {
+        flex-direction: column;
+    }
+
+    #Describe h2 {
+        font-size: 1.2rem;
+    }
+
+    .bottom-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .des1, .des2 {
+        padding: 5px;
+    }
+
+    #footer {
+        font-size: 0.9rem;
+        padding: 5px;
+        border-right: 1vw solid #555;
+        border-left: 1vw solid #555;
+        border-bottom: 0.5vh solid #02758f;
+        border-top: 0.5vh solid #02758f;
+    }
+}
