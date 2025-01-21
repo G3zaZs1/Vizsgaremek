@@ -8,6 +8,14 @@ body
     gap: 30px;
 }
 
+.wrapper
+{
+    width: 80%;
+    margin: auto;
+}
+
+/*////////////////////////HEADER/////////////////////////////////////////////*/
+
 .headline
 {
     background-color: #ff684d97;
@@ -15,6 +23,7 @@ body
     overflow: hidden;
     border-radius: 10px;
     gap: 10px;
+    margin-bottom: 10px;
 }
 
 ul
@@ -49,6 +58,10 @@ li a:hover
     background-color: #ff684da5;
 }
 
+
+/*////////////////////////BODY MAIN/////////////////////////////////////////////*/
+
+
 .content
 {
     background-color: #ff684d97;
@@ -81,33 +94,51 @@ li a:hover
     border-radius: 10px; /* Optional: Add rounded corners to the image */
 }
 
-/*/////////////////////////////////////////////////////////////////////*/
+/*////////////////////////SCREEN PLANS/////////////////////////////////////////////*/
 
-.screens ul {
-    list-style-type: none; /* Remove bullet points */
+.container {
+    margin-top: 20px;
+    display: flex; /* Use flexbox to arrange children horizontally */
+    gap: 20px; /* Space between the two divs */
+    align-items: flex-start; /* Align the divs at the top */
+    color: white;
+}
+
+.second {
+    background-color: #ff684d97;
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 20px; /* Add padding to give content space inside */
+    flex: 1; /* Allow it to grow and take available space */
+}
+
+.screen-img ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: grid; /* Use CSS Grid */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
-    gap: 20px; /* Space between items */
-    justify-content: center; /* Center the grid items */
+    display: grid;
+    grid-template-columns: repeat(2, 300px); /* Two columns with smaller items */
+    gap: 20px;
+    justify-content: right;
 }
 
-.screens ul li {
-    border-radius: 10px; /* Optional: Rounded corners for images */
-    overflow: hidden; /* Ensure content fits within rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow */
-    aspect-ratio: 1; /* Forces the item to be square */
+.screen-img ul li {
+    width: 300px; /* Explicitly set width */
+    height: 300px; /* Explicitly set height */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.screens ul li img {
+.screen-img ul li img {
     display: block;
     width: 100%; /* Make images fill their container */
     height: 100%; /* Ensure the image fills the square */
-    object-fit: cover; /* Ensure the image covers the square area */
 }
 
 
+/*////////////////////////FOOTER/////////////////////////////////////////////*/
 
 
 footer {
