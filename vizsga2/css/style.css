@@ -1,0 +1,181 @@
+body
+{
+    background-image: url('../img/fantasy-world-landscape-ai-generated-wallpaper-sr03072408-cover.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.wrapper
+{
+    width: 80%;
+    margin: auto;
+}
+
+/*////////////////////////HEADER/////////////////////////////////////////////*/
+
+.headline
+{
+    background-color: #ff684d97;
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 10px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+}
+
+li
+{
+    float: left;
+}
+
+#log
+{
+    float: right;
+}
+
+li a
+{
+    margin-top: 5px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover
+{
+    background-color: #ff684da5;
+}
+
+
+/*////////////////////////BODY MAIN/////////////////////////////////////////////*/
+
+
+.content
+{
+    background-color: #ff684d97;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.datas
+{
+    padding: 10px;
+}
+
+.datas ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Make list items display in a row */
+    gap: 20px; /* Add space between list items */
+    align-items: center; /* Align items vertically if heights differ */
+}
+
+.datas li {
+    flex: 1; /* Optional: Ensure equal width for each item */
+}
+
+.datas li img {
+    max-width: 100%; /* Ensure the image resizes properly */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+}
+
+/*////////////////////////SCREEN PLANS/////////////////////////////////////////////*/
+
+.container {
+    margin-top: 20px;
+    display: flex; /* Use flexbox to arrange children horizontally */
+    gap: 20px; /* Space between the two divs */
+    align-items: flex-start; /* Align the divs at the top */
+    color: white;
+}
+
+.second {
+    background-color: #ff684d97;
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 20px; /* Add padding to give content space inside */
+    flex: 1; /* Allow it to grow and take available space */
+}
+
+.screen-img ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 300px); /* Two columns with smaller items */
+    gap: 20px;
+    justify-content: right;
+}
+
+.screen-img ul li {
+    width: 300px; /* Explicitly set width */
+    height: 300px; /* Explicitly set height */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.screen-img ul li img {
+    display: block;
+    width: 100%; /* Make images fill their container */
+    height: 100%; /* Ensure the image fills the square */
+}
+
+
+/*////////////////////////FOOTER/////////////////////////////////////////////*/
+
+
+footer {
+    margin-top: 20px;
+    clear: both;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #66a803b5;
+    color: white;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    #Describe {
+        flex-direction: column;
+    }
+
+    #Describe h2 {
+        font-size: 1.2rem;
+    }
+
+    .bottom-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .des1, .des2 {
+        padding: 5px;
+    }
+
+    #footer {
+        font-size: 0.9rem;
+        padding: 5px;
+        border-right: 1vw solid #555;
+        border-left: 1vw solid #555;
+        border-bottom: 0.5vh solid #02758f;
+        border-top: 0.5vh solid #02758f;
+    }
+}
