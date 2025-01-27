@@ -1,0 +1,122 @@
+body
+{
+    background-image: url('../img/fantasy-world-landscape-ai-generated-wallpaper-sr03072408-cover.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.wrapper
+{
+    width: 80%;
+    margin: auto;
+}
+
+.content ul li
+{
+    box-shadow: 0 0 10px black;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/*////////////////////////HEADER/////////////////////////////////////////////*/
+
+.headline
+{
+    background-color: #ff684d97;
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 10px;
+    gap: 10px;
+    margin-bottom: 200px;
+}
+
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+}
+
+li
+{
+    float: left;
+}
+
+#log
+{
+    float: right;
+}
+
+li a
+{
+    margin-top: 5px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover
+{
+    background-color: #ff684da5;
+    border-radius: 10px;
+}
+
+
+/*////////////////////////BODY MAIN/////////////////////////////////////////////*/
+
+.content
+{
+    background-color: #ff684d97;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 60px;
+}
+
+
+/*////////////////////////FOOTER/////////////////////////////////////////////*/
+
+
+footer {
+    margin-top: 20px;
+    clear: both;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: #66a803b5;
+    color: white;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    #Describe {
+        flex-direction: column;
+    }
+
+    #Describe h2 {
+        font-size: 1.2rem;
+    }
+
+    .bottom-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .des1, .des2 {
+        padding: 5px;
+    }
+
+    #footer {
+        font-size: 0.9rem;
+        padding: 5px;
+        border-right: 1vw solid #555;
+        border-left: 1vw solid #555;
+        border-bottom: 0.5vh solid #02758f;
+        border-top: 0.5vh solid #02758f;
+    }
+}
